@@ -1,0 +1,17 @@
+C:\github\Grades\Grades.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\github\Grades\Grades.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\github\Grades\Grades.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\github\Grades\Grades.Tests\bin\Debug\Grades.Tests.dll
+C:\github\Grades\Grades.Tests\bin\Debug\Grades.Tests.pdb
+C:\github\Grades\Grades.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\github\Grades\Grades.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\github\Grades\Grades.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\github\Grades\Grades.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\github\Grades\Grades.Tests\obj\Debug\Grades.Tests.csprojAssemblyReference.cache
+C:\github\Grades\Grades.Tests\obj\Debug\Grades.Tests.csproj.CoreCompileInputs.cache
+C:\github\Grades\Grades.Tests\obj\Debug\Grades.Tests.csproj.CopyComplete
+C:\github\Grades\Grades.Tests\obj\Debug\Grades.Tests.dll
+C:\github\Grades\Grades.Tests\obj\Debug\Grades.Tests.pdb
+C:\github\Grades\Grades.Tests\bin\Debug\Grades.exe
+C:\github\Grades\Grades.Tests\bin\Debug\Grades.pdb
+C:\github\Grades\Grades.Tests\bin\Debug\Grades.exe.config
