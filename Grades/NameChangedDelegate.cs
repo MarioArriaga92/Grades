@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 namespace Grades
 {
     // Convention on events: 1st parameter sent is sender and second parameter has all needed information about event
-    public delegate void NameChangedDelegate(string existingName, string newName);
+    public delegate void NameChangedDelegate(object sender, NameChangedEventArgs args);
 }

@@ -3,3 +3,13 @@
 .vs/Grades/v15/.suo
 .vs/Grades/v15/Server/sqlite3/storage.ide-wal
 *.ide-wal
+.vs/Grades/v15/.suo
+Grades.Tests/bin/Debug/Grades.exe
+Grades.Tests/bin/Debug/Grades.pdb
+Grades.Tests/bin/Debug/Grades.Tests.dll
+Grades.Tests/bin/Debug/Grades.Tests.pdb
+Grades.Tests/obj/Debug/Grades.Tests.csprojAssemblyReference.cache
+*.dll
+*.pdb
+*.exe
+*.pdb
