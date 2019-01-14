@@ -11,10 +11,18 @@ namespace Grades
     {
         static void Main(string[] args)
         {
-            //SpeechSynthesizer synth = new SpeechSynthesizer();
-            //synth.Speak("Hello! This is the grade book program");
-
             GradeBook book = new GradeBook();
+
+            book.NameChanged += new NameChangedDelegate(OnNameChanged);
+            book.NameChanged += new NameChangedDelegate(OnNameChanged2);
+            book.NameChanged += new NameChangedDelegate(OnNameChanged2);
+            book.NameChanged -= new NameChangedDelegate(OnNameChanged2);
+            // Next line of code causes compiler error as event cannot be assigned values from outside GradeBook.cs
+            // book.NameChanged = null;
+
+            book.Name = "Scott's Grade Book";
+            book.Name = "Grade Book";
+
             book.AddGrade(95);
             book.AddGrade(71);
             book.AddGrade(83.3f);
@@ -35,6 +43,16 @@ namespace Grades
             //Console.WriteLine(description + ": " + result);
             //Console.WriteLine("{0}: {1:F2}", description, result);
             Console.WriteLine($"{description}: {result:F2}");
+        }
+
+        static void OnNameChanged(string existingName, string newName)
+        {
+            Console.WriteLine($"Grade book changing name from {existingName} to {newName}");
+        }
+
+        static void OnNameChanged2(string existingName, string newName)
+        {
+            Console.WriteLine("***");
         }
     }
 }
