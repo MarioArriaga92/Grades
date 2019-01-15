@@ -13,3 +13,8 @@ Grades.Tests/obj/Debug/Grades.Tests.csprojAssemblyReference.cache
 *.pdb
 *.exe
 *.pdb
+*.ide
+*.ide-shm
+*.ide-wal
+*.exe
+*.pdb
