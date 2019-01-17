@@ -12,27 +12,38 @@ namespace Grades
     {
         static void Main(string[] args)
         {
-            GradeBook book = new GradeBook();
+            IGradeTracker book = CreateGradeBook();
 
             // Commented to cause NullReferenceException
-            book.NameChanged += new NameChangedDelegate(OnNameChanged);
+            //book.NameChanged += new NameChangedDelegate(OnNameChanged);
 
-            GetName(book);
-            GetGrades(book);
+            //GetBookName(book);
+            AddGrades(book);
             SaveGrades(book);
             WriteResults(book);
         }
 
-        private static void WriteResults(GradeBook book)
+        private static IGradeTracker CreateGradeBook()
+        {
+            return new ThrowAwayGradeBook();
+        }
+
+        private static void WriteResults(IGradeTracker book)
         {
             GradeStatistics stats = book.ComputeStatistics();
+
+            foreach(float grade in book)
+            {
+                Console.WriteLine(grade);
+            }
+
             WriteResult("Average", stats.AverageGrade);
             WriteResult("Highest", stats.HighestGrade);
             WriteResult("Lowest", stats.LowestGrade);
             WriteResult(stats.Description, stats.LetterGrade);
         }
 
-        private static void SaveGrades(GradeBook book)
+        private static void SaveGrades(IGradeTracker book)
         {
             using (StreamWriter outputFile = File.CreateText("grades.txt"))
             {
@@ -40,14 +51,14 @@ namespace Grades
             }
         }
 
-        private static void GetGrades(GradeBook book)
+        private static void AddGrades(IGradeTracker book)
         {
             book.AddGrade(95);
             book.AddGrade(71);
             book.AddGrade(83.3f);
         }
 
-        private static void GetName(GradeBook book)
+        private static void GetBookName(IGradeTracker book)
         {
             try
             {

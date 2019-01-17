@@ -46,10 +46,13 @@
   <ItemGroup>
     <Compile Include="GradeBook.cs" />
     <Compile Include="GradeStatistics.cs" />
+    <Compile Include="GradeTracker.cs" />
+    <Compile Include="IGradeTracker.cs" />
     <Compile Include="NameChangedDelegate.cs" />
     <Compile Include="NameChangedEventArgs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThrowAwayGradeBook.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
